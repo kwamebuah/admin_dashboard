@@ -14,12 +14,16 @@ li {
 /* GENERAL FONTS */
 body {
     font-family: Roboto, 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000;
 }
 
 /* PAGE LAYOUT */
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    min-height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 header {
@@ -119,10 +123,11 @@ header>div:last-child {
 .main-area {
     display: flex;
     padding: 1rem;
+    justify-content: space-between;
 }
 
 /* PROJECTS SECTION LAYOUT */
-.projects {
+.card-area {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
@@ -131,17 +136,19 @@ header>div:last-child {
 .projects>h3 {
     grid-row: 1;
     grid-column: 1 / -1;
+    padding: 1rem 0;
 }
 
 /* ASIDE */
 aside {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-shrink: 1.4;
     padding: 0 1rem;
 }
 
-.announcements>div {
-    margin-top: 1rem;
+.announcements>h3 {
+    padding: 1rem 0;
 }
 
 /* SECTION STYLING */
@@ -149,9 +156,19 @@ aside {
 /* SIDE BAR */
 .sidebar {
     color: #fff;
-    background-color: rgb(94, 172, 239);
+    background-color: rgb(42, 147, 239);
     font-weight: bold;
-} 
+}
+
+.dashboard>h2 {
+    font-size: calc(1rem + 70%);
+    padding-right: 1rem;
+}
+
+.sidebar li {
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
 
 .sidebar a {
     text-decoration: none;
@@ -160,6 +177,7 @@ aside {
 
 /* HEADER */
 header {
+    background-color: #fff;
     box-shadow: 0 0.2rem 2px rgb(171, 178, 184);
     position: relative;
 }
@@ -170,7 +188,7 @@ header {
 
 /* MAIN AREA */
 .main-area {
-    background-color:  rgb(228, 234, 239);
+    background-color: rgb(228, 234, 239);
 }
 
 .card {
@@ -180,6 +198,7 @@ header {
     padding: 2rem;
     border-left: 6px solid rgb(253, 180, 46);
     box-shadow: 0 3px 3px rgb(171, 178, 184);
+    width: 100%;
 }
 
 .card h3 {
@@ -189,4 +208,39 @@ header {
 .card p {
     color: rgb(105, 105, 105);
     font-size: 0.9rem;
+}
+
+.announcements>div {
+    border: none;
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 3px 3px rgb(171, 178, 184);
+}
+
+.announcements article {
+    margin: 1rem 0;
+}
+
+.announcements article h4 {
+    font-size: 0.9rem;
+}
+
+.announcements article p {
+    font-size: .8rem;
+    color: rgb(105, 105, 105);
+}
+
+.trending>h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.trending-box {
+    background-color: #fff;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 3px 3px rgb(171, 178, 184);
+    height: 100%;
+    width: 2rem;
 }
