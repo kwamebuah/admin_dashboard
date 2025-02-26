@@ -143,3 +143,32 @@ aside {
 .announcements>div {
     margin-top: 1rem;
 }
+
+/* SECTION STYLING */
+
+/* SIDE BAR */
+.sidebar {
+    color: #fff;
+    background-color: rgb(94, 172, 239);
+    font-weight: bold;
+} 
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+header {
+    box-shadow: 0 0.2rem 2px rgb(171, 178, 184);
+    position: relative;
+}
+
+.search-notification form input {
+    background-color: rgb(228, 234, 239);
+}
+
+/* MAIN AREA */
+.main-area {
+    background-color:  rgb(228, 234, 239);
+}
