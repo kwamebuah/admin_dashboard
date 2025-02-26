@@ -31,10 +31,10 @@ header {
     grid-column: 1;
 }
 
+/* HEADER LAYOUT */
 .search-notification {
     display: flex;
     justify-content: space-between;
-    border: 1px solid blue;
 }
 
 .search-notification form {
@@ -63,6 +63,13 @@ header {
     background-color: orange;
 }
 
+header>div:last-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
 
-
-
+.project-actions {
+    display: flex;
+    gap: 1rem;
+}
