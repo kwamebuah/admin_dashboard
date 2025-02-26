@@ -125,7 +125,7 @@ header>div:last-child {
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .projects>h3 {
@@ -171,4 +171,22 @@ header {
 /* MAIN AREA */
 .main-area {
     background-color:  rgb(228, 234, 239);
+}
+
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    border-left: 6px solid rgb(253, 180, 46);
+    box-shadow: 0 3px 3px rgb(171, 178, 184);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+}
+
+.card p {
+    color: rgb(105, 105, 105);
+    font-size: 0.9rem;
 }
