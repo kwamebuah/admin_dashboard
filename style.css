@@ -43,11 +43,14 @@ header {
 .search-notification {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .search-notification form {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .search-notification input {
@@ -56,25 +59,15 @@ header {
 
 .user-login {
     display: flex;
-    gap: 1rem;
-}
-
-.avatar-img {
-    width: 1rem;
-    height: 100%;
-    background-color: antiquewhite;
-}
-
-.notification {
-    width: 1rem;
-    height: 100%;
-    background-color: orange;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 header>div:last-child {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+    align-items: center;
+    padding-top: 1rem;
 }
 
 .project-actions {
@@ -199,8 +192,52 @@ header {
     position: relative;
 }
 
+.search-notification form button {
+    width: 1.5rem;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
 .search-notification form input {
+    font-size: 1rem;
     background-color: rgb(228, 234, 239);
+    border-radius: 15px;
+    border: none;
+    padding: 0.5rem;
+}
+
+.notification-bell {
+    background-color: transparent;
+    border: none;
+    width: 1.5rem;
+}
+
+.avatar-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.project-actions button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(42, 147, 239);
+    color: #fff;
+    font-weight: bold;
+}
+
+.user-greeting img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
 }
 
 /* MAIN AREA */
