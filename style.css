@@ -75,6 +75,16 @@ header>div:last-child {
     gap: 1rem;
 }
 
+.user-greeting {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-greeting>p span {
+    display: block;
+}
+
 /* SIDEBAR LAYOUT */
 .sidebar {
     display: flex;
@@ -199,6 +209,10 @@ header {
     border: none;
 }
 
+.search-notification form button:focus, .search-notification form button:hover {
+    cursor: pointer;
+}
+
 .search-notification form input {
     font-size: 1rem;
     background-color: rgb(228, 234, 239);
@@ -211,6 +225,10 @@ header {
     background-color: transparent;
     border: none;
     width: 1.5rem;
+}
+
+.notification-bell:hover, .notification-bell:focus {
+    cursor: pointer;
 }
 
 .avatar-img {
@@ -234,10 +252,25 @@ header {
     font-weight: bold;
 }
 
-.user-greeting img{
+.project-actions button:hover, 
+.project-actions button:focus {
+    background-color: rgba(42, 147, 239, 0.776);
+    cursor: pointer;
+}
+
+.user-greeting img {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+}
+
+.user-greeting>p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.user-greeting>p span {
+    font-size: 1.3rem;
 }
 
 /* MAIN AREA */
