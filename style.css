@@ -95,12 +95,7 @@ header>div:last-child {
 .dashboard {
     display: flex;
     gap: 1rem;
-}
-
-.dash-image {
-    width: 1rem;
-    height: 100%;
-    background-color: black;
+    align-items: center;
 }
 
 .sidebar ul {
@@ -108,14 +103,13 @@ header>div:last-child {
 }
 
 .sidebar ul li {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
-.sidebar ul img {
-    margin-right: 1rem;
-    width: 1rem;
-    height: 1rem;
-    background-color: brown;
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 
@@ -160,6 +154,10 @@ aside {
     font-weight: bold;
 }
 
+.dash-image {
+    fill: #fff;
+}
+
 .dashboard>h2 {
     font-size: calc(1rem + 70%);
     padding-right: 1rem;
@@ -173,6 +171,11 @@ aside {
 .sidebar a {
     text-decoration: none;
     color: inherit;
+}
+
+.sidebar a>svg {
+    width: 1.5rem;
+    fill: #fff;
 }
 
 /* HEADER */
