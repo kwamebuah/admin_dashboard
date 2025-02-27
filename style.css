@@ -133,6 +133,20 @@ header>div:last-child {
     padding: 1rem 0;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card>.card-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+
 /* ASIDE */
 aside {
     display: flex;
@@ -199,7 +213,7 @@ header {
     border: none;
     border-radius: 10px;
     padding: 2rem;
-    border-left: 6px solid rgb(253, 180, 46);
+    border-left: 10px solid rgb(253, 180, 46);
     box-shadow: 0 3px 3px rgb(171, 178, 184);
     width: 100%;
 }
@@ -211,6 +225,10 @@ header {
 .card p {
     color: rgb(105, 105, 105);
     font-size: 0.9rem;
+}
+
+.card>.card-actions svg {
+    width: 1.5rem;
 }
 
 .announcements>div {
