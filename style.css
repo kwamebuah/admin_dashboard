@@ -11,6 +11,18 @@ li {
     list-style-type: none;
 }
 
+/* VARIABLES */
+:root {
+    --gap-value: 1rem;
+    --base-padding: 1rem;
+    --sidebar-bg-clr: rgb(42, 147, 239);
+    --sidebar-bg-light-clr: rgba(42, 147, 239, 0.776);
+    --light-clr: rgb(255 255 255);
+    --main-area-bg-clr: rgb(228, 234, 239);
+    --box-shadow-clr-1: rgb(171, 178, 184);
+    --light-paragraph-clr: rgb(105, 105, 105);
+}
+
 /* GENERAL FONTS */
 body {
     font-family: Roboto, 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -31,7 +43,7 @@ header {
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: var(--base-padding) 2rem;
 }
 
 .sidebar {
@@ -44,12 +56,12 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: var(--gap-value);
 }
 
 .search-notification form {
     display: flex;
-    gap: 1rem;
+    gap: var(--gap-value);
     align-items: center;
 }
 
@@ -67,18 +79,18 @@ header>div:last-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: var(--base-padding);
 }
 
 .project-actions {
     display: flex;
-    gap: 1rem;
+    gap: var(--gap-value);
 }
 
 .user-greeting {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--gap-value);
 }
 
 .user-greeting>p span {
@@ -91,13 +103,13 @@ header>div:last-child {
     flex-direction: column;
     justify-content: start;
     gap: 4rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding-left: var(--base-padding);
+    padding-top: var(--base-padding);
 }
 
 .dashboard {
     display: flex;
-    gap: 1rem;
+    gap: var(--gap-value);
     align-items: center;
 }
 
@@ -112,14 +124,14 @@ header>div:last-child {
 .sidebar ul li a {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--gap-value)
 }
 
 
 /* MAIN */
 .main-area {
     display: flex;
-    padding: 1rem;
+    padding: var(--base-padding);
     justify-content: space-between;
 }
 
@@ -133,7 +145,7 @@ header>div:last-child {
 .projects>h3 {
     grid-row: 1;
     grid-column: 1 / -1;
-    padding: 1rem 0;
+    padding: var(--base-padding) 0;
 }
 
 .card {
@@ -155,11 +167,11 @@ aside {
     display: flex;
     flex-direction: column;
     flex-shrink: 1.4;
-    padding: 0 1rem;
+    padding: 0 var(--base-padding);
 }
 
 .announcements>h3 {
-    padding: 1rem 0;
+    padding: var(--base-padding) 0;
 }
 
 /* FOOTER */
@@ -172,23 +184,23 @@ footer {
 
 /* SIDE BAR */
 .sidebar {
-    color: #fff;
-    background-color: rgb(42, 147, 239);
+    color: var(--light-clr);
+    background-color: var(--sidebar-bg-clr);
     font-weight: bold;
 }
 
 .dash-image {
-    fill: #fff;
+    fill: var(--light-clr);
 }
 
 .dashboard>h2 {
     font-size: calc(1rem + 70%);
-    padding-right: 1rem;
+    padding-right: var(--base-padding);
 }
 
 .sidebar li {
     font-size: 1.2rem;
-    padding-right: 1rem;
+    padding-right: var(--base-padding);
 }
 
 .sidebar a {
@@ -198,13 +210,13 @@ footer {
 
 .sidebar a>svg {
     width: 1.5rem;
-    fill: #fff;
+    fill: var(--light-clr);
 }
 
 /* HEADER */
 header {
-    background-color: #fff;
-    box-shadow: 0 0.2rem 2px rgb(171, 178, 184);
+    background-color: var(--light-clr);
+    box-shadow: 0 0.2rem 2px var(--box-shadow-clr-1);
     position: relative;
 }
 
@@ -221,7 +233,7 @@ header {
 
 .search-notification form input {
     font-size: 1rem;
-    background-color: rgb(228, 234, 239);
+    background-color: var(--main-area-bg-clr);
     border-radius: 15px;
     border: none;
     padding: 0.5rem;
@@ -253,14 +265,14 @@ header {
     height: 2rem;
     border-radius: 20px;
     border: none;
-    background-color: rgb(42, 147, 239);
-    color: #fff;
+    background-color: var(--sidebar-bg-clr);
+    color: var(--light-clr);
     font-weight: bold;
 }
 
 .project-actions button:hover, 
 .project-actions button:focus {
-    background-color: rgba(42, 147, 239, 0.776);
+    background-color: var(--sidebar-bg-light-clr);
     cursor: pointer;
 }
 
@@ -281,16 +293,16 @@ header {
 
 /* MAIN AREA */
 .main-area {
-    background-color: rgb(228, 234, 239);
+    background-color: var(--main-area-bg-clr);
 }
 
 .card {
-    background-color: #fff;
+    background-color: var(--light-clr);
     border: none;
     border-radius: 10px;
     padding: 2rem;
     border-left: 10px solid rgb(253, 180, 46);
-    box-shadow: 0 3px 3px rgb(171, 178, 184);
+    box-shadow: 0 3px 3px var(--box-shadow-clr-1);
     width: 100%;
 }
 
@@ -299,7 +311,7 @@ header {
 }
 
 .card p {
-    color: rgb(105, 105, 105);
+    color: var(--light-paragraph-clr);
     font-size: 0.9rem;
 }
 
@@ -310,9 +322,9 @@ header {
 .announcements>div {
     border: none;
     border-radius: 7px;
-    background-color: #fff;
-    padding: 1rem 2rem;
-    box-shadow: 0 3px 3px rgb(171, 178, 184);
+    background-color: var(--light-clr);
+    padding: var(--base-padding) 2rem;
+    box-shadow: 0 3px 3px var(--box-shadow-clr-1);
 }
 
 .announcements article {
@@ -325,7 +337,7 @@ header {
 
 .announcements article p {
     font-size: .8rem;
-    color: rgb(105, 105, 105);
+    color: var(--light-paragraph-clr);
 }
 
 .trending>h3 {
@@ -334,17 +346,17 @@ header {
 }
 
 .trending-box {
-    background-color: #fff;
+    background-color: var(--light-clr);
     border-radius: 7px;
     border: none;
-    padding: 1rem 2rem;
-    box-shadow: 0 3px 3px rgb(171, 178, 184);
+    padding: var(--base-padding) 2rem;
+    box-shadow: 0 3px 3px var(--box-shadow-clr-1);
 }
 
 .trending-user {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--gap-value);
     padding: 0.5rem 0;
 }
 
@@ -357,9 +369,9 @@ header {
 }
 
 footer {
-    background-color: rgb(228, 234, 239);
+    background-color: var(--main-area-bg-clr);
     text-align: center;
     font-size: 0.9rem;
     letter-spacing: 0.1ch;
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 var(--base-padding) 0;
 }
